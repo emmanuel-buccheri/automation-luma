@@ -9,7 +9,9 @@
 
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report",
-    "allure:clear": "rm -r allure-results/ allure-report/ || true"
+    "allure:clear": "rm -r allure-results/ allure-report/ || true",
+
+    "cy:complete": "cy:run:report allure:generate allure:open"
   },
   "author": "Emmanuel Buccheri",
   "license": "ISC",

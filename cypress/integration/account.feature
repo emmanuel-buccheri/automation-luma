@@ -1,16 +1,17 @@
-Feature: Cadastro de usuários
+#language:pt
+Funcionalidade: Cadastro de usuários
 
     Como usuario, desejo criar uma conta
     Para comprar na loja
 
-Background:
-    Given acesse na home page
+Contexto:
+    Dado acesse na home page
 
-Scenario Outline: Tentar cadastrar usuário <scenario>
-    When tente criar uma conta com "<firstName>" "<lastName>" "<email>" "<pass>" "<confirmPass>"
-    Then deve ser exibida a menssagem "<message>"
+Esquema do Cenario: Tentar cadastrar usuário <scenario>
+    Quando tente criar uma conta com "<firstName>" "<lastName>" "<email>" "<pass>" "<confirmPass>"
+    Então deve ser exibida a menssagem "<message>"
 
-    Examples:
+    Exemplos:
         | scenario             | firstName | lastName | email    | pass      | confirmPass | message                                                      |
         | com sucesso          | Emmanuel  | Teste    | meuemail | Senha.123 | Senha.123   | Thank you for registering with Main Website Store.           |
         | sem nome             | vazio     | Teste    | meuemail | Senha.123 | Senha.123   | This is a required field.                                    |
