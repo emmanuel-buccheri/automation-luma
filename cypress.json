@@ -1,7 +1,12 @@
 {
     "testFiles": "**/*.feature",
-    "viewportWidth": 1366,
-    "viewportHeight": 624,
-    "defaultCommandTimeout": 10000,
+    "viewportWidth": 1440,
+    "viewportHeight": 900,
+    "defaultCommandTimeout": 25000,
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    },
     "baseUrl": "https://magento.nublue.co.uk"
+    
 }

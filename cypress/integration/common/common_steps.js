@@ -1,31 +1,22 @@
-const commonElements = require('./elements').ELEMENTS;
-const loginElements = require('../login/elements').ELEMENTS;
+import homePage from '../../support/pages/home'
+import common from '../../support/pages/common'
+import header from '../../support/pages/header'
+import loginPage from '../../support/pages/login'
+
 import customerFactory from '../../factories/customerFactory';
 
 Given(/^acesse na home page$/, () => {
-    cy.visit(commonElements.url)
-    cy.contains('Default welcome msg!')
+    homePage.go()
 });
 
 Then(/^deve ser exibida a menssagem "([^"]*)"$/, (message) => {
-	cy.contains(message).should('be.visible');
+    common.expectedMessage(message)
 });
 
-When(/^fazer login$/, () => {
+When(/^faça login$/, () => {
 	var customer = customerFactory.customer()
 
-    cy.get(commonElements.loginButton).should('be.visible').click()
-    cy.url().should('include', loginElements.url)
-
-    cy.get(loginElements.emailField).should('be.visible').type(customer.email)
-    cy.get(loginElements.passField).should('be.visible').type(customer.password)
-    cy.get(loginElements.signinButton).should('be.visible').click()
-
-    cy.contains(commonElements.loggedMessage,'Welcome, '+customer.firstName+' '+customer.lastName+'!')
+    header.openLoginPage()
+    loginPage.fillLoginFields(customer.email,customer.password)
+    loginPage.submitLogin()
 });
-
-// Then(/^deve ser exibida a mensagem$/, (datatable) => {
-//     datatable.hashes().forEach(element => {
-//         cy.contains(element.message).should('be.visible');
-//     })
-// });

@@ -1,6 +1,5 @@
 export const ELEMENTS = {
     url: '/customer/account/create/',
-    //createAccountButton: '.panel > .panel > .header > li',
     firstNameField: '#firstname',
     lastNameField: '#lastname',
     emailField: '#email_address',
