@@ -1,8 +1,8 @@
-const headerElements = require('../header/elements').ELEMENTS;
-const loginElements = require('../login/elements').ELEMENTS;
-const accountElements = require('../account/elements').ELEMENTS;
-const searchElements = require('../search/elements').ELEMENTS;
-const checkoutElements = require('../checkout/elements').ELEMENTS;
+const headerElements = require('../elements/headerElements').ELEMENTS;
+const loginElements = require('../elements/loginElements').ELEMENTS;
+const accountElements = require('../elements/accountElements').ELEMENTS;
+const searchElements = require('../elements/searchElements').ELEMENTS;
+const checkoutElements = require('../elements/checkoutElements').ELEMENTS;
 
 
 class Header {
@@ -33,4 +33,4 @@ class Header {
         cy.contains(checkoutElements.stepTitle,'Shipping Address')
     }
 }
-export default new Header;
+export default Header;

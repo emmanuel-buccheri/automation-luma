@@ -1,5 +1,5 @@
-const productElements = require('../product/elements').ELEMENTS;
-const searchElements = require('../search/elements').ELEMENTS;
+const productElements = require('../elements/productElements').ELEMENTS;
+const searchElements = require('../elements/searchElements').ELEMENTS;
 
 class SearchPage {
     openSearchedProduct(product) {

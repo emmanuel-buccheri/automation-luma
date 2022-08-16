@@ -1,9 +1,9 @@
-import homePage from '../../support/pages/home'
-import common from '../../support/pages/common'
-import header from '../../support/pages/header'
-import loginPage from '../../support/pages/login'
+import homePage from '../support/pages/home'
+import common from '../support/pages/common'
+import header from '../support/pages/header'
+import loginPage from '../support/pages/login'
 
-import customerFactory from '../../factories/customerFactory';
+import customerFactory from '../support/factories/customerFactory';
 
 Given(/^acesse na home page$/, () => {
     homePage.go()

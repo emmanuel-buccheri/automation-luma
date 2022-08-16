@@ -6,7 +6,6 @@
   "scripts": {
     "test": "npx cypress open",
     "cy:run:report": "cypress run --env allure=true",
-
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report",
     "allure:clear": "rm -r allure-results/ allure-report/ || true"
@@ -16,10 +15,16 @@
   "devDependencies": {
     "@faker-js/faker": "^7.3.0",
     "@shelex/cypress-allure-plugin": "^2.27.1",
-    "cypress": "^9.7.0",
+    "cypress": "^10.5.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+    }
   }
 }

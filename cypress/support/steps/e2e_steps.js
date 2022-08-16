@@ -1,9 +1,9 @@
-import header from '../../support/pages/header'
-import searchPage from '../../support/pages/search'
-import productPage from '../../support/pages/product'
-import checkoutPage from '../../support/pages/checkout'
+import header from '../pageObjects/headerPage'
+import searchPage from '../pageObjects/searchPage'
+import productPage from '../pageObjects/productPage'
+import checkoutPage from '../pageObjects/checkoutPage'
 
-import customerFactory from '../../factories/customerFactory';
+import customerFactory from '../factories/customerFactory';
 
 When(/^pesquise o produto "([^"]*)"$/, (product) => {  
     header.search(product)

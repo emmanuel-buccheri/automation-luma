@@ -1,4 +1,4 @@
-const productElements = require('../product/elements').ELEMENTS;
+const productElements = require('../elements/productElements').ELEMENTS;
 
 class ProductPage {
     setQuantity(quantity) {

@@ -1,4 +1,4 @@
-const checkoutElements = require('../checkout/elements').ELEMENTS;
+const checkoutElements = require('../elements/checkoutElements').ELEMENTS;
 
 class CheckoutPage {
     goToPaymentStep() {
