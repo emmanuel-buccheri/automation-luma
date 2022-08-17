@@ -4,4 +4,4 @@ class HomePage {
         cy.url().should('include', 'magento.nublue.co.uk')
     }
 }
-export default new HomePage;
+export default HomePage;

@@ -1,4 +1,7 @@
-export const ELEMENTS = {
-    productTitle: '.product-item-link',
-    resultTitle: '.base'
+class searchElements {
+
+    productTitle= () => { return  '.product-item-link'}
+    resultTitle= () => { return  '.base'}
+
 }
+export default searchElements;

@@ -1,23 +1,24 @@
-const checkoutElements = require('../elements/checkoutElements').ELEMENTS;
+import checkoutElements from '../elements/checkoutElements';
+const CheckoutElements = new checkoutElements;
 
 class CheckoutPage {
     goToPaymentStep() {
-        cy.get(checkoutElements.goToPaymentButton).should('be.visible').click()
-        cy.contains(checkoutElements.stepTitle, 'Payment Method')
+        cy.get(CheckoutElements.goToPaymentButton()).should('be.visible').click()
+        cy.contains(CheckoutElements.stepTitle(), 'Payment Method')
     }
 
     fillShippmentFields(street,country,region,city,postalCode,telephone) {
-        cy.get(checkoutElements.streetField).should('be.visible').type(street)
-        cy.get(checkoutElements.countrySelect).should('be.visible').select(country)
-        cy.get(checkoutElements.regionSelect).should('be.visible').select(region)
-        cy.get(checkoutElements.cityField).should('be.visible').type(city)
-        cy.get(checkoutElements.postalCodeField).should('be.visible').type(postalCode)
-        cy.get(checkoutElements.telephoneField).should('be.visible').type(telephone)
+        cy.get(CheckoutElements.streetField()).should('be.visible').type(street)
+        cy.get(CheckoutElements.countrySelect()).should('be.visible').select(country)
+        cy.get(CheckoutElements.regionSelect()).should('be.visible').select(region)
+        cy.get(CheckoutElements.cityField()).should('be.visible').type(city)
+        cy.get(CheckoutElements.postalCodeField()).should('be.visible').type(postalCode)
+        cy.get(CheckoutElements.telephoneField()).should('be.visible').type(telephone)
     }
 
     placeOrder() {
-        cy.get(checkoutElements.placeOrderButton).should('be.visible').click()
+        cy.get(CheckoutElements.placeOrderButton()).should('be.visible').click()
         cy.url().should('include', '/checkout/onepage/success')
     }
 }
-export default new CheckoutPage;
+export default CheckoutPage;
