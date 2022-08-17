@@ -23,7 +23,7 @@
             "name": "acesse na home page",
             "result": {
               "status": "passed",
-              "duration": 2223000000
+              "duration": 1700000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "faça login",
             "result": {
               "status": "passed",
-              "duration": 4827000000
+              "duration": 22302000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "pesquise o produto \"Fusion Backpack\"",
             "result": {
               "status": "passed",
-              "duration": 2522000000
+              "duration": 3225000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "abra o produto \"Fusion Backpack\" pesquisado",
             "result": {
               "status": "passed",
-              "duration": 756000000
+              "duration": 3287000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "ingrese a quantidade \"5\"",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 32000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "adicione o produto \"Fusion Backpack\" ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 4527000000
+              "duration": 3428000000
             }
           },
           {
@@ -83,7 +83,17 @@
             "name": "entre no checkout",
             "result": {
               "status": "passed",
-              "duration": 22765000000
+              "duration": 24530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "complete os dados de entrega",
+            "result": {
+              "status": "passed",
+              "duration": 3932000000
             }
           },
           {
@@ -92,9 +102,8 @@
             "line": 18,
             "name": "avance para o metodo de pagamento",
             "result": {
-              "status": "failed",
-              "duration": 25674000000,
-              "error_message": "AssertionError: Timed out retrying after 25000ms: Expected to find content: 'Payment Method' within the selector: '.step-title' but never did.\n    at CheckoutPage.goToPaymentStep (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:397:10)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:779:16)\n    at Context.resolveAndRunStepDefinition (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11925:29)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11246:35)"
+              "status": "passed",
+              "duration": 5958000000
             }
           },
           {
@@ -103,7 +112,8 @@
             "line": 19,
             "name": "finalice o pedido",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6677000000
             }
           },
           {
@@ -112,7 +122,8 @@
             "line": 21,
             "name": "deve ser exibida a menssagem \"Thank you for your purchase!\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29000000
             }
           }
         ]
