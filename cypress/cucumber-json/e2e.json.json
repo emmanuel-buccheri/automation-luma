@@ -23,7 +23,7 @@
             "name": "acesse na home page",
             "result": {
               "status": "passed",
-              "duration": 3505000000
+              "duration": 2223000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "faça login",
             "result": {
               "status": "passed",
-              "duration": 32492000000
+              "duration": 4827000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "pesquise o produto \"Fusion Backpack\"",
             "result": {
               "status": "passed",
-              "duration": 2809000000
+              "duration": 2522000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "abra o produto \"Fusion Backpack\" pesquisado",
             "result": {
               "status": "passed",
-              "duration": 1647000000
+              "duration": 756000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "ingrese a quantidade \"5\"",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 30000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "adicione o produto \"Fusion Backpack\" ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 6812000000
+              "duration": 4527000000
             }
           },
           {
@@ -82,9 +82,8 @@
             "line": 16,
             "name": "entre no checkout",
             "result": {
-              "status": "failed",
-              "duration": 26502000000,
-              "error_message": "AssertionError: Timed out retrying after 25000ms: Expected to find content: 'Shipping Address' within the selector: '.step-title' but never did.\n    at Header.goToCheckout (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:519:10)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:771:14)\n    at Context.resolveAndRunStepDefinition (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11925:29)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11246:35)"
+              "status": "passed",
+              "duration": 22765000000
             }
           },
           {
@@ -93,7 +92,9 @@
             "line": 18,
             "name": "avance para o metodo de pagamento",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 25674000000,
+              "error_message": "AssertionError: Timed out retrying after 25000ms: Expected to find content: 'Payment Method' within the selector: '.step-title' but never did.\n    at CheckoutPage.goToPaymentStep (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:397:10)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:779:16)\n    at Context.resolveAndRunStepDefinition (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11925:29)\n    at Context.eval (https://magento.nublue.co.uk/__cypress/tests?p=cypress/e2e/e2e.feature:11246:35)"
             }
           },
           {
