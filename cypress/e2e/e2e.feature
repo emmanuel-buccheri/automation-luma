@@ -14,7 +14,7 @@ Esquema do Cenario: Compra com sucesso
     E ingrese a quantidade "<quantity>"
     E adicione o produto "<product>" ao carrinho
     E entre no checkout
-    # E complete os dados de entrega
+    E complete os dados de entrega
     E avance para o metodo de pagamento
     E finalice o pedido
 

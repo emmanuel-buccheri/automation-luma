@@ -1,0 +1,133 @@
+[
+  {
+    "description": "    Como usuário, desejo navegar na app\n    Para finalizar um pedido na loja",
+    "keyword": "Funcionalidade",
+    "name": "Fluxo E2E",
+    "line": 2,
+    "id": "fluxo-e2e",
+    "tags": [],
+    "uri": "e2e.feature",
+    "elements": [
+      {
+        "id": "fluxo-e2e;compra-com-sucesso",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Compra com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "acesse na home page",
+            "result": {
+              "status": "passed",
+              "duration": 1700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 11,
+            "name": "faça login",
+            "result": {
+              "status": "passed",
+              "duration": 22302000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 12,
+            "name": "pesquise o produto \"Fusion Backpack\"",
+            "result": {
+              "status": "passed",
+              "duration": 3225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 13,
+            "name": "abra o produto \"Fusion Backpack\" pesquisado",
+            "result": {
+              "status": "passed",
+              "duration": 3287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 14,
+            "name": "ingrese a quantidade \"5\"",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "adicione o produto \"Fusion Backpack\" ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 3428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "entre no checkout",
+            "result": {
+              "status": "passed",
+              "duration": 24530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 17,
+            "name": "complete os dados de entrega",
+            "result": {
+              "status": "passed",
+              "duration": 3932000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 18,
+            "name": "avance para o metodo de pagamento",
+            "result": {
+              "status": "passed",
+              "duration": 5958000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 19,
+            "name": "finalice o pedido",
+            "result": {
+              "status": "passed",
+              "duration": 6677000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 21,
+            "name": "deve ser exibida a menssagem \"Thank you for your purchase!\"",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
