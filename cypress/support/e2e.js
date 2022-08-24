@@ -3,6 +3,7 @@ import './commands'
 import '@shelex/cypress-allure-plugin';
 require('@shelex/cypress-allure-plugin');
 
+// Limpar passo a passo
 const app = window.top;
 if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
   const style = app.document.createElement('style');
@@ -13,7 +14,7 @@ if (!app.document.head.querySelector('[data-hide-command-log-request]')) {
   app.document.head.appendChild(style);
 }
 
-// TENTANDO PEGAR ERRO!!!
+// Pegar uncaught error
 Cypress.on('uncaught:exception', (err, runnable) => {
   return false
 })
