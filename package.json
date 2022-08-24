@@ -21,7 +21,7 @@
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps",
     "cucumberJson": {
-      "generate": true,
+      "generate": false,
       "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".json"
