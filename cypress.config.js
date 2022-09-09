@@ -22,7 +22,7 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents,
-    baseUrl: 'https://magento.nublue.co.uk',
+    baseUrl: 'https://magento.nublue.co.uk/',
     specPattern: 'cypress/e2e/**/*.{feature,features}',
   },
 })

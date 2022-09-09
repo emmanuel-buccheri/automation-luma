@@ -13,9 +13,9 @@
   "author": "Emmanuel Buccheri",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^7.3.0",
-    "@shelex/cypress-allure-plugin": "^2.27.1",
-    "cypress": "^10.6.0",
+    "@faker-js/faker": "^7.5.0",
+    "@shelex/cypress-allure-plugin": "^2.30.3",
+    "cypress": "^10.7.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
   "cypress-cucumber-preprocessor": {

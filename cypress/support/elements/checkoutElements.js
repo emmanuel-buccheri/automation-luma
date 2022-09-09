@@ -1,6 +1,8 @@
 class checkoutElements {
 
     stepTitle= () => { return '.step-title'}
+    newAddressButton=() => {return '.new-address-popup > .action > span'}
+    shipHereButton=() => {return '.modal-footer > .primary'}
     goToPaymentButton= () => { return '.button.action.continue.primary'}
     placeOrderButton= () => { return '.action.primary.checkout'}
     streetField= () => { return 'input[name="street[0]"]'}

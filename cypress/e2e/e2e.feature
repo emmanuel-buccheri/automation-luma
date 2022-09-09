@@ -22,4 +22,4 @@ Esquema do Cenario: Compra com sucesso
 
     Exemplos:
     | product         | quantity | message                      |
-    | Fusion Backpack | 5        | Thank you for your purchase! |
+    | Fusion Backpack | 1        | Thank you for your purchase! |

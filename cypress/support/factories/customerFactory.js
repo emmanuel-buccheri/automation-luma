@@ -3,8 +3,8 @@ export default {
         var data = {
             firstName: 'Emmanuel',
             lastName: 'Teste',
-            email: 'emmanuelteste3@mailinator.com',
-            password: 'Senha.123',
+            email: 'roni_cost@example.com',
+            password: 'roni_cost3@example.com',
             phoneNumber: '+55(61)99123-1234',
             address: {
                 street: 'Avenida Central Bloco 1450',

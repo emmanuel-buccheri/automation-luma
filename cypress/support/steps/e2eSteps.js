@@ -33,7 +33,7 @@ When(/^entre no checkout$/, () => {
 
 When(/^complete os dados de entrega$/, () => {
     var customer = customerFactory.customer()
-
+    CheckoutPage.newAddress()
     CheckoutPage.fillShippmentFields(customer.address.street,customer.address.country,customer.address.state,customer.address.city,customer.address.postalCode,customer.phoneNumber)
 });
 
