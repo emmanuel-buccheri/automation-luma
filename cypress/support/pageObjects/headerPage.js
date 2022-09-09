@@ -29,11 +29,11 @@ class Header {
     }
 
     openMiniCart() {
-        cy.get(HeaderElements.miniCartButton()).should('be.visible').click()
+        cy.get(HeaderElements.miniCartButton()).click({force:true})
     }
 
     goToCheckout() {
-        cy.get(HeaderElements.goToCheckoutButton()).should('be.visible').click()
+        cy.get(HeaderElements.goToCheckoutButton()).should('be.visible').click({force:true})
         // cy.get('#checkout-loader').should("not.be.visible")
         cy.contains(CheckoutElements.stepTitle(), 'Shipping Address')
     }

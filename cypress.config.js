@@ -24,5 +24,6 @@ module.exports = defineConfig({
     setupNodeEvents,
     baseUrl: 'https://magento.nublue.co.uk/',
     specPattern: 'cypress/e2e/**/*.{feature,features}',
+    experimentalStudio: true
   },
 })
