@@ -1,7 +1,7 @@
-import headerPage from '../pageObjects/headerPage'
-import searchPage from '../pageObjects/searchPage'
-import productPage from '../pageObjects/productPage'
-import checkoutPage from '../pageObjects/checkoutPage'
+import headerPage from '../pages/headerPage'
+import searchPage from '../pages/searchPage'
+import productPage from '../pages/productPage'
+import checkoutPage from '../pages/checkoutPage'
 
 const HeaderPage = new headerPage
 const SearchPage = new searchPage

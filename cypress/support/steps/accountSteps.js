@@ -1,5 +1,5 @@
-import accountPage from '../pageObjects/accountPage'
-import headerPage from '../pageObjects/headerPage'
+import accountPage from '../pages/accountPage'
+import headerPage from '../pages/headerPage'
 const AccountPage = new accountPage
 const HeaderPage = new headerPage
 

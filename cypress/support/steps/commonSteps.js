@@ -1,7 +1,7 @@
-import homePage from '../pageObjects/homePage'
-import headerPage from '../pageObjects/headerPage'
-import commonPage from '../pageObjects/commonPage'
-import loginPage from '../pageObjects/loginPage'
+import homePage from '../pages/homePage'
+import headerPage from '../pages/headerPage'
+import commonPage from '../pages/commonPage'
+import loginPage from '../pages/loginPage'
 
 const HomePage = new homePage
 const HeaderPage = new headerPage
