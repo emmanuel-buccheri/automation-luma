@@ -1,5 +1,5 @@
 .DS_Store
-.package-lock.json
+package-lock.json
 cypress/screenshots/
 cypress/videos/
 cypress/cucumber-json/*.json
