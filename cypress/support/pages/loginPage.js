@@ -10,7 +10,8 @@ class LoginPage {
     submitLogin() {
         cy.get(LoginElements.signinButton()).should('be.visible').click()
         // cy.url().should('include', '/customer/account/')
-        cy.contains('Welcome, ')
+        cy.reload()
+        cy.contains('welcome')
     }
 }
 export default LoginPage;

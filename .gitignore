@@ -1,7 +1,11 @@
-node_modules/
-readme.md
-allure-results/
-allure-report/
+.DS_Store
+package-lock.json
 cypress/screenshots/
 cypress/videos/
-cypress/cucumber-json/
+cypress/cucumber-json/*.json
+cypress/reports/
+cypress/support/reports/
+cypress/downloads/
+node_modules/
+allure-results/
+allure-report/

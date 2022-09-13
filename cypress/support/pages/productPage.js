@@ -10,6 +10,7 @@ class ProductPage {
 
     addToCart(product) {
         cy.get(ProductElements.addToCartButton()).should('be.visible').click()
+        cy.wait(3000)
         cy.contains('You added ' + product + ' to your shopping cart.').should('be.visible')
     }
 }
