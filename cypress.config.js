@@ -9,6 +9,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  projectId: "2yfsg3",
   viewportWidth: 1440,
   viewportHeight: 900,
   defaultCommandTimeout: 25000,
