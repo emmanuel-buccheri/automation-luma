@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx cypress open",
     "cy:run:report": "cypress run --env allure=true",
-    "allure:generate": "allure generate allure-results",
+    "allure:generate": "allure generate allure-results --clean",
     "allure:open": "allure open allure-report",
     "allure:clear": "rm -r allure-results/ allure-report/ || true"
   },
