@@ -3,4 +3,4 @@ class Common {
         cy.contains(message).should('be.visible');
     }
 }
-export default Common;
+export default new Common;

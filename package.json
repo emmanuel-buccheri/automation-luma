@@ -13,18 +13,20 @@
   "author": "Emmanuel Buccheri",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^7.5.0",
-    "@shelex/cypress-allure-plugin": "^2.31.0",
-    "cypress": "^10.7.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/grep": "^4.0.0",
+    "@cucumber/cucumber": "^9.5.1",
+    "@cucumber/gherkin": "^27.0.0",
+    "esbuild": "^0.19.3",
+    "eslint-plugin-cypress": "^2.15.1",
+    "@faker-js/faker": "^8.1.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^13.2.0"
   },
   "cypress-cucumber-preprocessor": {
-    "step_definitions": "cypress/support/steps",
-    "cucumberJson": {
-      "generate": false,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".json"
-    }
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "nonGlobalStepDefinitions": true
   }
 }

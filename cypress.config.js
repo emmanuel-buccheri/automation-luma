@@ -1,10 +1,16 @@
-const { defineConfig } = require('cypress')
-const cucumber = require('cypress-cucumber-preprocessor').default
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const { defineConfig } = require("cypress");
+const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
+const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
+const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild");
 
 async function setupNodeEvents(on, config) {
-  on('file:preprocessor', cucumber())
-  allureWriter(on, config);
+  await preprocessor.addCucumberPreprocessorPlugin(on, config);
+  on(
+    "file:preprocessor",
+    createBundler({
+      plugins: [createEsbuildPlugin.default(config)],
+    }),
+  );
   return config;
 }
 
@@ -22,9 +28,14 @@ module.exports = defineConfig({
     openMode: 0,
   },
   e2e: {
+    retries: {
+      runMode: 1,
+    },
+    experimentalStudio: true,
+    supportFile: "cypress/support/e2e.js",
+    specPattern: "**/*.feature",
+    stepDefinitions: "cypress/support/step_definitions/*.js",
     setupNodeEvents,
-    baseUrl: 'https://magento.nublue.co.uk/',
-    specPattern: 'cypress/e2e/**/*.{feature,features}',
-    experimentalStudio: true
+    baseUrl: 'https://magento2-demo.magebit.com'
   },
 })

@@ -1,48 +1,52 @@
 import accountElements from '../elements/accountElements';
-const AccountElements = new accountElements;
-
-import { faker } from '@faker-js/faker/locale/pt_BR';
+import { pt_BR, Faker } from '@faker-js/faker';
+export const faker = new Faker({
+  locale: [pt_BR],
+});
 
 class AccountPage {
     fillAccountFields(firstName, lastName, email, pass, confirmPass) {
         if (firstName == 'vazio') {
-            cy.get(AccountElements.firstNameField()).should('be.visible')
+            cy.get(accountElements.firstNameField()).should('be.visible')
         }
         else {
-            cy.get(AccountElements.firstNameField()).should('be.visible').type(firstName)
+            cy.get(accountElements.firstNameField()).should('be.visible').type(firstName)
         }
 
         if (lastName == 'vazio') {
-            cy.get(AccountElements.lastNameField()).should('be.visible')
+            cy.get(accountElements.lastNameField()).should('be.visible')
         }
         else {
-            cy.get(AccountElements.lastNameField()).should('be.visible').type(lastName)
+            cy.get(accountElements.lastNameField()).should('be.visible').type(lastName)
         }
 
         if (email == 'vazio') {
-            cy.get(AccountElements.emailField()).should('be.visible')
+            cy.get(accountElements.emailField()).should('be.visible')
+        } 
+        else if (email == 'meuemail') {
+            cy.get(accountElements.emailField()).should('be.visible').type(faker.internet.email(email))
         }
         else {
-            cy.get(AccountElements.emailField()).should('be.visible').type(faker.internet.email(email))
+            cy.get(accountElements.emailField()).should('be.visible').type(email)
         }
 
         if (pass == 'vazio') {
-            cy.get(AccountElements.passField()).should('be.visible')
+            cy.get(accountElements.passField()).should('be.visible')
         }
         else {
-            cy.get(AccountElements.passField()).should('be.visible').type(pass)
+            cy.get(accountElements.passField()).should('be.visible').type(pass)
         }
 
         if (confirmPass == 'vazio') {
-            cy.get(AccountElements.confirmPassField()).should('be.visible')
+            cy.get(accountElements.confirmPassField()).should('be.visible')
         }
         else {
-            cy.get(AccountElements.confirmPassField()).should('be.visible').type(confirmPass)
+            cy.get(accountElements.confirmPassField()).should('be.visible').type(confirmPass)
         }
     }
 
     submitAccountForm() {
-        cy.get(AccountElements.submitButton()).should('be.visible').click()
+        cy.get(accountElements.submitButton()).should('be.visible').click()
     }
 }
-export default AccountPage;
+export default new AccountPage;

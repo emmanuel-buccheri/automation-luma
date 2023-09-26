@@ -1,7 +1,5 @@
-class searchElements {
-
-    productTitle= () => { return  '.product-item-link'}
-    resultTitle= () => { return  '.base'}
-
+class SearchElements {
+    productTitle= () => ".product-item-link";
+    resultTitle= () => ".base";
 }
-export default searchElements;
+export default new SearchElements();

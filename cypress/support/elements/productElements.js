@@ -1,8 +1,6 @@
-class productElements {
-
-    productTitle= () => { return 'span[data-ui-id="page-title-wrapper"]'}
-    quantityField= () => { return ' #qty'}
-    addToCartButton= () => { return '#product-addtocart-button'}
-
+class ProductElements {
+    productTitle= () => `span[data-ui-id="page-title-wrapper"]`;
+    quantityField= () => "#qty";
+    addToCartButton= () => "#product-addtocart-button";
 }
-export default productElements;
+export default new ProductElements();

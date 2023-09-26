@@ -1,25 +1,20 @@
-#language:pt
-Funcionalidade: Fluxo E2E
+Feature: Fluxo E2E
 
-    Como usuário, desejo navegar na app
-    Para finalizar um pedido na loja
+Background:
+    Given acesse na home page
 
-Contexto:
-    Dado acesse na home page
+Scenario Outline: Compra com sucesso
+    When faça login
+    And pesquise o produto "<product>"
+    And abra o produto "<product>" pesquisado
+    And ingrese a quantidade "<quantity>"
+    And adicione o produto "<product>" ao carrinho
+    And entre no checkout
+    And complete os dados de entrega
+    And avance para o metodo de pagamento
+    And finalice o pedido
+    Then deve ser exibida a menssagem "<message>"
 
-Esquema do Cenario: Compra com sucesso
-    Quando faça login
-    E pesquise o produto "<product>"
-    E abra o produto "<product>" pesquisado
-    E ingrese a quantidade "<quantity>"
-    E adicione o produto "<product>" ao carrinho
-    E entre no checkout
-    E complete os dados de entrega
-    E avance para o metodo de pagamento
-    E finalice o pedido
-
-    Então deve ser exibida a menssagem "<message>"
-
-    Exemplos:
+    Examples:
     | product         | quantity | message                      |
     | Fusion Backpack | 1        | Thank you for your purchase! |
